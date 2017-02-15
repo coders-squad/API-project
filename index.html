@@ -11,7 +11,17 @@
 			<div class="overlay">
 				<div class="cont-wrp">
 					<input type="text" name="text1" id="search" placeholder="Search for food">
-          <button id="btn" type="button" name="button" onclick="submit()">Submit</button>
+          <button id="btn" type="button" name="button" onclick="
+	          waterfall([
+				  submit,
+				  functionName,
+				  val
+				], function(res) {
+				  console.log(res); // => 3
+				});
+		  ">
+		 	 Submit
+		  </button>
 				</div>
 			</div>
 		</section>
@@ -58,7 +68,7 @@
 					</div>
 					<!-- table wrapper -->
 					<div class="col-md-6 image-wrp">
-						<img src="">
+						<img id="meal_img">
 					</div>
 					<!-- image wrapper -->
 				</div>
@@ -67,8 +77,7 @@
 			<!-- container -->
 		</section>
 	</main>
-  <script type="text/javascript" src="src.js">
-
-  </script>
+  <script type="text/javascript" src="src.js"></script>
+  <script type="text/javascript" src="test.js"></script>
 </body>
 </html>
