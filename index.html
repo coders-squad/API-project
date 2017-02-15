@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<main>
+		<section  class="hero">
+			<img src="img/hero.png">
+			<div class="overlay">
+				<div class="cont-wrp">
+					<input type="text" name="text1" id="search" placeholder="Search for food">
+          <button id="btn" type="button" name="button" onclick="submit()">Submit</button>
+				</div>
+			</div>
+		</section>
+		<section id="hero" class="brands">
+			<div class="container">
+				<h2>Brands</h2>
+				<div id="brands">
+
+
+				</div>
+			</div>
+		</section>
+		<section id="res" class="results" style="display: none">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<table>
+							<tbody>
+								<tr>
+									<th colspan="3">
+										Nutritions
+									</th>
+								</tr>
+								<tr class="energy">
+									<td class="calories">
+							        Calories &nbsp;<span class="amount" id = "calories">17</span>
+							     	</td>
+									<td class="kilojoules" colspan="2">(<span class="amount">72</span> kJ)</td>
+								</tr>
+								<tr class="fat-calories">
+									<td>
+										Fat
+
+									</td>
+									<td colspan="2" id = "fats">1</td>
+								</tr>
+								<tr class="daily-value-header">
+
+
+
+
+							</tbody>
+						</table>
+					</div>
+					<!-- table wrapper -->
+					<div class="col-md-6 image-wrp">
+						<img src="">
+					</div>
+					<!-- image wrapper -->
+				</div>
+				<!-- row -->
+			</div>
+			<!-- container -->
+		</section>
+	</main>
+  <script type="text/javascript" src="src.js">
+
+  </script>
+</body>
+</html>
