@@ -1,5 +1,18 @@
 ![alt text](https://github.com/coders-squad/pomodoro-timer/blob/master/STEAKHOUSE_1_.png)
 
 
-### You probably know that testing is good, but the first hurdle to overcome when trying to write unit tests for client-side code is the lack of any actual units; JavaScript code is written for each page of a website or each module of an application and is closely intermixed with back-end logic and related HTML. In the worst case, the code is completely mixed with HTML, as inline events handlers.
+### Our project is a webapp about nutrition that uses 2 APIs:
+#### First API takes text as the input for nutrition search and give the user results regarding the brands available for the search.
+#### Second API provides the user with photos relevant to the searched item/brand.  
+
+
+
+###APIs 
+###### First API: Nutrition 
+This API has differnt data of foods like Brand Name, item name,calories and fats
+![alt text] (https://raw.githubusercontent.com/coders-squad/API-project/master/img/food.png)
+
+##### Second API : Bing Image Search 
+This API returns relevant images to the searched item.
+
 
