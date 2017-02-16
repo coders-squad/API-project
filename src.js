@@ -63,6 +63,7 @@ function getBrands() {
                 for (var j = 0; j < arr.length; j++) {
                     if(itemVal == arr[j].brand_name){
                         document.getElementById("calories").innerHTML = arr[j].nf_calories;
+                        document.getElementById("brand_name").innerHTML = arr[j].brand_name;
                         document.getElementById("fats").innerHTML = arr[j].nf_total_fat;
                     }
                 }
