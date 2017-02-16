@@ -45,7 +45,7 @@ function submit() {
             }
         };
 
-        myRequest.open("GET", "https://api.nutritionix.com/v1_1/search/" + document.getElementById("search").value + "?fields=item_name%2Citem_id%2Cbrand_name%2Cnf_calories%2Cnf_total_fat&appId=22abaad9&appKey=f286963aed1edb4e49a2b3f179bff498", true);
+        myRequest.open("GET", "https://api.nutritionix.com/v1_1/search/" + document.getElementById("search").value + "?fields=item_name%2Citem_id%2Cbrand_name%2Cnf_calories%2Cnf_total_fat&appId=22abaad9&appKey="+keys.food_key, true);
         myRequest.send();
     }, 500);
 };
@@ -90,7 +90,7 @@ function getImage() {
             true
         );
         myRequest2.setRequestHeader("Content-Type", "multipart/form-data");
-        myRequest2.setRequestHeader("Ocp-Apim-Subscription-Key", "46fa6f32bc44492d87b34c95e1a37a10");
+        myRequest2.setRequestHeader("Ocp-Apim-Subscription-Key", keys.image_key);
         myRequest2.send();
     }, 1000);
 }
