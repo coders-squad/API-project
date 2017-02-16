@@ -16,3 +16,11 @@ This API has differnt data of foods like Brand Name, item name,calories and fats
 This API returns relevant images to the searched item.
 
 
+###### Use TDD to test functions are exist, async, and waterfall function 
+
+
+
+
+Our Website : https://coders-squad.github.io/API-project/
+
+
