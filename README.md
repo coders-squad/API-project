@@ -18,6 +18,13 @@ This API returns relevant images to the searched item.
 
 ###### Use TDD to test functions are exist, async, and waterfall function 
 
+# User Stories:
+-A user can enter any  food he wants to check it's calories and fats.
+-A user can see the image of this food to make sure it's the same he searched for.
+
+
+
+
 
 
 
