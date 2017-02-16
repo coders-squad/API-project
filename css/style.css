@@ -118,3 +118,24 @@ body{
 .results .image-wrp{
 	text-align: right;
 }
+.btn-wrp{
+    text-align: center;
+}
+.btn-wrp #btn{
+    width: 140px;
+    height: 35px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #3abd3a;
+    border: 0;
+    margin-top: 20px;
+}
+@media (max-width: 991px){
+    .col-md-6{
+        width: 100%;
+    }
+    .results .image-wrp {
+        text-align: center;
+        padding-top: 20px;
+    }
+}
