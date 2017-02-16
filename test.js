@@ -1,46 +1,37 @@
-// var waterfall = function(value, arg ,cb) {
+var test = QUnit.test;
 
-//   if( arg.length === 0){
-//     cb(value);
-//  }
+test("check if the function `submit` exists",function(t){
+  t.ok(window.submit,"it exists");
+});
 
-//   arg[0](value,function(total){
-//      waterfall(total,arg.slice(1),cb)
-//   });
+
+
+
+
+// var res= submit();
+
+// function api_test(url, type, data, callback) {
+//   ajax(
+//     {
+//       url: url,
+//       type: type,
+//       processData: false,
+//       contentType: 'application/json; charset=utf-8',
+//       data: JSON.stringify(data),
+//       dataType: 'json',
+//       async: false,
+//       complete: function (result) {
+//         if (result.status == 0) {
+//           ok(false, '0 status - browser could be on offline mode');
+//         } else if (result.status == 404) {
+//           ok(false, '404 error');
+//         } else {
+//           callback(parseJSON(result.responseText));
+//         }
+//       }
+//     });
 // }
+// test("check if the api return data",function(t){
 
-// function add_one (n,cb) {
-//   setTimeout(function(){
-//     const total = n + 1;
-//     cb(total);
-//   },200);
-// }
-
-// function less_one (n,cb) {
-//   setTimeout(function(){
-//     const total = n - 1;
-//     cb(total);
-//   },200);
-// }
-
-// function multiply_two (n,cb) {
-//   setTimeout(function(){
-//     const total = n * 2;
-//     cb(total);
-//   },200);
-// }
-// function start (n,cb) {
-//   setTimeout(function(){
-//     const total = parseInt(n)
-//     cb(total);
-//   },200);
-// }
-
-// waterfall('5', [
-//   start,
-//   add_one,
-//   multiply_two,
-//   less_one
-// ], function(res) {
-//   console.log(res); // => 3
+//   t.ok(api_test(),"Api return");
 // });

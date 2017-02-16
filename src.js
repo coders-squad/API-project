@@ -73,7 +73,7 @@ var myRequest2 = new XMLHttpRequest();
   myRequest2.onreadystatechange = function() {
     if (myRequest2.readyState === 4 && myRequest2.status === 200) {
         var data2 = JSON.parse(myRequest2.responseText);
-        var imageUrl = data2.queryExpansions[0].thumbnail.thumbnailUrl;
+        var imageUrl = data2.queryExpansions[2].thumbnail.thumbnailUrl;
         console.log(imageUrl);
         document.getElementById("meal_img").setAttribute("src",imageUrl);
          //console.log(data2);
